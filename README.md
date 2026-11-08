@@ -1,33 +1,12 @@
-### Finance
+# Library Management System
 
-none
+A Library Management System built with **Frappe Framework v16** as a learning project. It provides a foundation for managing library articles, library members, and borrowing transactions.
 
-### Installation
+The project includes four main DocTypes:
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- **Article:** Manages library article information and availability.
+- **Library Member:** Stores member details.
+- **Library Transaction:** Records article issue and return transactions.
+- **Library Settings:** Stores configurable library settings, such as loan periods and maximum borrowing limits.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch dev
-bench install-app testing123project
-```
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/testing123project
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+The system also includes role-based permissions, with a dedicated **Librarian** role and administrative access for **System Manager**.
